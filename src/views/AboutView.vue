@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Test routing on this website</h1>
   </div>
 </template>
