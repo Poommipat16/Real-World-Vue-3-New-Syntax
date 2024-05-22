@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 
 defineProps({
   event: {
@@ -16,6 +15,7 @@ defineProps({
   </div>
 </template>
 
+<!-- scoped มีไว้เพื่อ add style แค่ใน component เท่านั้น -->
 <style scoped>
 .event-card {
   padding: 20px;
