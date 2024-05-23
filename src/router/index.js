@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import EventListView from '../views/EventListView.vue'
+import EventDetails from '../views/EventDetails.vue'
 import AboutView from '../views/AboutView.vue'
 
 const router = createRouter({
@@ -9,6 +10,13 @@ const router = createRouter({
       path: '/',
       name: 'event-list',
       component: EventListView,
+    },
+    {
+      path: '/event/:id',
+      name: 'event-details',
+      // กำหนด props เป็น true เพื่อรับค่า prop แล้วส่งค่าต่อไปให้ eventDetails 
+      props: true,
+      component: EventDetails,
     },
     {
       path: '/about',
